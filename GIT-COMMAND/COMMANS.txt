@@ -1,0 +1,88 @@
+Hi im Lokesh,
+Today we gone to learn the Git Commands
+
+
+----------------------------GIT COMMANDS---------------------------
+
+COMMAND PROMPT
+	
+	git config --global user.name "lokesh2506"
+	
+	git config --global user.email "lokeshkumars2506@gmail.com"
+
+VS CODE TERMINAL	
+ 
+	1) we need to create a folder in desktop
+
+	2)we clone the git repo to the Desktop Folder
+
+	git clone "reposite url"
+	
+	3)Add a new file in the local-repo
+
+	GITHUB  -> Desktop Folder -> local Repo ->new File
+
+	git add text2.txt
+
+	4)ones it get added means --> it added in local repo 
+	
+	git commit -m "text2.tx is added"
+
+	5) After Commited it will be reflect in Desktop/Local Folder but we need to push in GITHUB repo
+	
+	git push origin main        (main is a branch)
+
+    -----------------------------------------------------------------------------------------
+
+    FOLDER SHOULD UPLOAD IN REPOSITE
+
+    1) We open a folder in a VS CODE
+
+    git init 
+
+    2)Each and every file show that untracked file .we do the same thing like before
+
+    git add index.html
+
+    3)once it get added means --> it added in local repo 
+	
+	git commit -m "index.html is added"
+
+    4) Now we need to push in GITHUB .But we need a origin 
+       First created a repo and copy url
+
+    git remote add origin https://github.com/lokesh2506/Testing.git
+
+    5) We can view and change tha branch
+
+    git branch         -->give the current branch
+
+    git branch -m Lokesh     -->change the name of the branch
+
+    6)we need to push in the GithUb repo
+
+    git push orgin Lokesh
+
+
+    SHORTCUT --> git add .   -->it select all untracked File
+             --> cd ..    -> it will go back from current folder
+
+    ----------------------------BRANCH------------------------------
+
+    1)Getting the list of Branches 
+
+    git branch -a
+
+    2)After creating a branch in Github
+
+    git pull -->this is used to update the changes from the online github
+                if any changes in GitHub Local Folder will not able to know 
+                so we use this Commands
+
+    3)git checkout newBranch  -->this is used to change one branch to another branch
+
+    git  diff newBranch   -->it check the difference between current branch and given branch
+
+    git  merge newBranch   --> it merge the both branch that means both having same files
+
+    git push origin main    -->then only it diplay in GitHub
